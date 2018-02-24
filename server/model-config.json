@@ -59,5 +59,13 @@
   "Market": {
     "dataSource": "db",
     "public": true
+  },
+  "MarketType": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Item": {
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -1,0 +1,19 @@
+{
+  "name": "MarketType",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "items": {
+      "type": "hasMany",
+      "model": "Item",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
