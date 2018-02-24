@@ -18,6 +18,11 @@
       "type": "hasMany",
       "model": "Address",
       "foreignKey": ""
+    },
+    "market": {
+      "type": "hasOne",
+      "model": "Market",
+      "foreignKey": ""
     }
   },
   "acls": [],

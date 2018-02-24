@@ -55,5 +55,9 @@
   "Address": {
     "dataSource": "db",
     "public": false
+  },
+  "Market": {
+    "dataSource": "db",
+    "public": true
   }
 }
