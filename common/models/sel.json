@@ -1,5 +1,5 @@
 {
-  "name": "Customer",
+  "name": "sel",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -8,20 +8,14 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "account": {
+    "customer": {
       "type": "belongsTo",
-      "model": "Account",
+      "model": "Customer",
       "foreignKey": ""
     },
-    "suppliers": {
-      "type": "hasMany",
+    "supplier": {
+      "type": "belongsTo",
       "model": "Supplier",
-      "foreignKey": "",
-      "through": "sel"
-    },
-    "addresses": {
-      "type": "hasMany",
-      "model": "Address",
       "foreignKey": ""
     }
   },

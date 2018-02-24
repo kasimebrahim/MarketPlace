@@ -43,5 +43,17 @@
   "Customer": {
     "dataSource": "db",
     "public": true
+  },
+  "Supplier": {
+    "dataSource": "db",
+    "public": true
+  },
+  "sel": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "db",
+    "public": false
   }
 }

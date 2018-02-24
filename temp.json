@@ -1,0 +1,40 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 3,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "Account": 3,
+    "Customer": 2,
+    "sel": 2,
+    "Supplier": 2,
+    "Address": 2
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {
+      "hSZHViPOcf12Me1vGElWt5nxY2DZW57NcY9aM13aFUN2ErllPIKJ4tWef9q8cBlp": "{\"id\":\"hSZHViPOcf12Me1vGElWt5nxY2DZW57NcY9aM13aFUN2ErllPIKJ4tWef9q8cBlp\",\"ttl\":1209600,\"created\":\"2018-02-24T20:48:29.992Z\",\"userId\":1}",
+      "ysoEKlGlST01PB4ER8A9TAVWh4V9yIVNAsRBL6ivbqwchZBkanYidAaLCwQoZ7Jy": "{\"id\":\"ysoEKlGlST01PB4ER8A9TAVWh4V9yIVNAsRBL6ivbqwchZBkanYidAaLCwQoZ7Jy\",\"ttl\":1209600,\"created\":\"2018-02-24T20:57:49.172Z\",\"userId\":1}"
+    },
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "Account": {
+      "1": "{\"type\":\"Customer\",\"username\":\"kasim\",\"password\":\"$2a$10$xJ8IVbGTEtMmdMP7FLgVZud46PWq/gcsohPkUJUkGfS4kitFBMAt6\",\"email\":\"kasim@gmail.com\",\"emailVerified\":false,\"id\":1}",
+      "2": "{\"type\":\"supplier\",\"username\":\"kalid\",\"password\":\"$2a$10$Ab/7ysQ8o6JI1fQ05Umm3OSoaCLETwjgqX9jdYoAY41j36XankOz6\",\"email\":\"kalid@gmail.com\",\"emailVerified\":false,\"id\":2}"
+    },
+    "Customer": {
+      "1": "{\"accountId\":1,\"id\":1}"
+    },
+    "sel": {
+      "1": "{\"customerId\":1,\"supplierId\":1,\"id\":1}"
+    },
+    "Supplier": {
+      "1": "{\"accountId\":2,\"id\":1}"
+    },
+    "Address": {
+      "1": "{\"customerId\":1,\"streat\":\"adwa\",\"id\":1}"
+    }
+  }
+}

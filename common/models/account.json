@@ -11,7 +11,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "customer": {
+      "type": "hasOne",
+      "model": "Customer",
+      "foreignKey": ""
+    },
+    "supplier": {
+      "type": "hasOne",
+      "model": "Supplier",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
