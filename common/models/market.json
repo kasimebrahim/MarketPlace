@@ -5,7 +5,11 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "marketTypes": {
+      "type": "array"
+    }
+  },
   "validations": [],
   "relations": {
     "supplier": {
