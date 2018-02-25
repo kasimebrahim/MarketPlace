@@ -8,6 +8,10 @@
   "properties": {
     "marketTypes": {
       "type": "array"
+    },
+    "supplierId": {
+      "type": "Number",
+      "id": true
     }
   },
   "validations": [],
@@ -24,6 +28,13 @@
       "principalType": "ROLE",
       "principalId": "$everyone",
       "permission": "DENY"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "edit"
     }
   ],
   "methods": {}
