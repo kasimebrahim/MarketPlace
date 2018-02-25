@@ -5,7 +5,12 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "accountId":{
+      "type": "Number", 
+      "id": true
+    }
+  },
   "validations": [],
   "relations": {
     "account": {
@@ -37,6 +42,13 @@
       "principalType": "ROLE",
       "principalId": "$owner",
       "permission": "ALLOW"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "edit"
     }
   ],
   "methods": {}
