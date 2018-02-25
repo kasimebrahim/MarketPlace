@@ -6,8 +6,8 @@
     "validateUpsert": true
   },
   "properties": {
-    "accountId":{
-      "type": "Number", 
+    "accountId": {
+      "type": "Number",
       "id": true
     }
   },

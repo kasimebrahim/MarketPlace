@@ -7,7 +7,7 @@
     "Role": 1,
     "Account": 3,
     "Customer": 3,
-    "Supplier": 1,
+    "Supplier": 3,
     "sel": 1,
     "Address": 1,
     "Market": 1,
@@ -17,20 +17,22 @@
   "models": {
     "User": {},
     "AccessToken": {
-      "3DygI4ZO7YVS2niTmfiwMIFImDhJEL9df0NoR5jFONt6HPzLCWY4IdcgeTBS7tQy": "{\"id\":\"3DygI4ZO7YVS2niTmfiwMIFImDhJEL9df0NoR5jFONt6HPzLCWY4IdcgeTBS7tQy\",\"ttl\":1209600,\"created\":\"2018-02-25T10:21:53.184Z\",\"userId\":2}"
+      "4LrY2B8zvi7viX3MAfPpzPCCUvMKijKAXjV0Be6m5YEE7h4gcZchS3L3xUTXlxiD": "{\"id\":\"4LrY2B8zvi7viX3MAfPpzPCCUvMKijKAXjV0Be6m5YEE7h4gcZchS3L3xUTXlxiD\",\"ttl\":1209600,\"created\":\"2018-02-25T10:42:26.046Z\",\"userId\":2}"
     },
     "ACL": {},
     "RoleMapping": {},
     "Role": {},
     "Account": {
-      "1": "{\"type\":\"Customer\",\"username\":\"cus1\",\"password\":\"$2a$10$ALPNlrMfTsfZxT1zPWmW9eBUTtJhE/Eibe03ODFSjfGYuCiHheRuu\",\"email\":\"string@gmail.com\",\"emailVerified\":false,\"id\":1}",
-      "2": "{\"type\":\"Customer\",\"username\":\"cus2\",\"password\":\"$2a$10$xBFPaLhGq7McQkxyZ53ib.2rdhz51D5Csk2a.OHG.8a0gh0xjVxeO\",\"email\":\"string2@gmail.com\",\"emailVerified\":false,\"id\":2}"
+      "1": "{\"type\":\"Supplier\",\"username\":\"sup1\",\"password\":\"$2a$10$sP5u5Kg/ypFOuljR0cDezO0w7oQWO5cv1OfizVv8fPxpjYfM4Y5AW\",\"email\":\"sup1@gmail.com\",\"emailVerified\":false,\"id\":1}",
+      "2": "{\"type\":\"Customer\",\"username\":\"cus1\",\"password\":\"$2a$10$NrIhJZTXL2bjmuPHW/X0QeBGnXBCRJriMJBbESGk3P0PaJ8.6Ps.C\",\"email\":\"cus1@gmail.com\",\"emailVerified\":false,\"id\":2}"
     },
     "Customer": {
-      "1": "{\"accountId\":1,\"n\":\"k\"}",
-      "2": "{\"accountId\":2,\"u\":\"v\"}"
+      "2": "{\"accountId\":2,\"I\":\"cus\"}"
     },
-    "Supplier": {},
+    "Supplier": {
+      "1": "{\"accountId\":1,\"s\":\"baskjdh\"}",
+      "2": "{\"accountId\":2,\"I\":\"sup\"}"
+    },
     "sel": {},
     "Address": {},
     "Market": {},
