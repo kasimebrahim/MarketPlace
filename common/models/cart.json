@@ -6,21 +6,22 @@
     "validateUpsert": true
   },
   "properties": {
-    "customerId":{
-      "id":true
+    "customerId": {
+      "type": "Number",
+      "id": true
     }
   },
   "validations": [],
   "relations": {
-    "customer": {
-      "type": "belongsTo",
-      "model": "Customer",
-      "foreignKey": "customerId"
-    },
     "items": {
       "type": "hasMany",
       "model": "Item",
       "foreignKey": ""
+    },
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "customerId"
     }
   },
   "acls": [],
