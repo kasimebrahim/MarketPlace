@@ -32,7 +32,7 @@
     "cart": {
       "type": "hasOne",
       "model": "Cart",
-      "foreignKey": ""
+      "foreignKey": "accountId"
     }
   },
   "acls": [
