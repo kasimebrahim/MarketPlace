@@ -78,5 +78,9 @@
   "Item": {
     "dataSource": "db",
     "public": true
+  },
+  "Cart": {
+    "dataSource": "db",
+    "public": true
   }
 }

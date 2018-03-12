@@ -1,0 +1,24 @@
+{
+  "name": "Cart",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": ""
+    },
+    "items": {
+      "type": "hasMany",
+      "model": "Item",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
