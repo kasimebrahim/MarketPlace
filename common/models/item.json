@@ -1,0 +1,43 @@
+{
+  "name": "Item",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "brand": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "model": {
+      "type": "string"
+    },
+    "stock": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "market": {
+      "type": "belongsTo",
+      "model": "Market",
+      "foreignKey": ""
+    },
+    "itemType": {
+      "type": "belongsTo",
+      "model": "ItemType",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
