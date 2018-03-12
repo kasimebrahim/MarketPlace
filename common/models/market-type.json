@@ -8,9 +8,9 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "items": {
+    "itemTypes": {
       "type": "hasMany",
-      "model": "Item",
+      "model": "ItemType",
       "foreignKey": ""
     }
   },

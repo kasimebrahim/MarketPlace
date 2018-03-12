@@ -1,5 +1,5 @@
 {
-  "name": "Item",
+  "name": "ItemType",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

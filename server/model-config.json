@@ -71,7 +71,7 @@
     "dataSource": "db",
     "public": true
   },
-  "Item": {
+  "ItemType": {
     "dataSource": "db",
     "public": true
   }
