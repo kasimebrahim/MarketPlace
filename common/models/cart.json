@@ -1,17 +1,21 @@
 {
   "name": "Cart",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "customerId":{
+      "id":true
+    }
+  },
   "validations": [],
   "relations": {
     "customer": {
       "type": "belongsTo",
       "model": "Customer",
-      "foreignKey": ""
+      "foreignKey": "customerId"
     },
     "items": {
       "type": "hasMany",
