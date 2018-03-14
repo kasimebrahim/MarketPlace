@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
-import { store } from './redux/store';
+import { store } from './module/store';
 import { BrowserRouter } from 'react-router-dom';
-import App from './App';
+import 'semantic-ui-css/semantic.min.css';
+import {App} from './App';
 
 
 ReactDOM.render(
