@@ -1,3 +1,3 @@
 export * from './layout';
 export * from './auth';
-export * from './items';
+export * from './content';

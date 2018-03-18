@@ -1,9 +1,8 @@
 import React from 'react';
-import ItemSearch from './ItemSearch'
 
 const Items = () => (
     <div>
-        <ItemSearch/>
+        Items will be listed here!
     </div>
 );
 
