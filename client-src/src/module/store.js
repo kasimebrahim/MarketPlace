@@ -1,5 +1,4 @@
 import { compose, applyMiddleware, createStore } from 'redux';
-import { syncHistoryWithStore } from 'react-router-redux';
 import logger from "redux-logger";
 import rootReducer from './reducers';
 
