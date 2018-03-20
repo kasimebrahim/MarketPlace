@@ -1,20 +1,14 @@
 import { compose, applyMiddleware, createStore } from 'redux';
-import logger from "redux-logger";
+import thunk from "redux-thunk";
 import rootReducer from './reducers';
-
-const middleware = [
-  logger
-];
-
-const enhancers = compose(
-  applyMiddleware(...middleware),
-  window.devToolsExtension ? window.devToolsExtension() : f => f
-);
 
 const store = createStore(
   rootReducer,
   {},
-  enhancers
+  compose(
+	  applyMiddleware(thunk),
+	  window.devToolsExtension ? window.devToolsExtension() : f => f
+	)
 );
 
 

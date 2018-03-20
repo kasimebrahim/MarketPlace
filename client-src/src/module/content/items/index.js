@@ -1,3 +1,4 @@
 import Items from './Items';
+import itemsReducer from './reducer';
 
-export {Items};
+export {Items, itemsReducer};
