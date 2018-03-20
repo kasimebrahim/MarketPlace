@@ -1,5 +1,5 @@
 {
-  "name": "MarketType",
+  "name": "ItemType",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -8,9 +8,9 @@
   "properties": {},
   "validations": [],
   "relations": {
-    "itemTypes": {
-      "type": "hasMany",
-      "model": "ItemType",
+    "marketType": {
+      "type": "belongsTo",
+      "model": "MarketType",
       "foreignKey": ""
     }
   },

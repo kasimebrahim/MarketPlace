@@ -1,17 +1,27 @@
 {
-  "name": "MarketType",
+  "name": "Cart",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+    "accountId": {
+      "type": "Number",
+      "id": true
+    }
+  },
   "validations": [],
   "relations": {
-    "itemTypes": {
+    "items": {
       "type": "hasMany",
-      "model": "ItemType",
+      "model": "Item",
       "foreignKey": ""
+    },
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "accountId"
     }
   },
   "acls": [
@@ -22,9 +32,9 @@
       "permission": "DENY"
     },
     {
-      "accessType": "READ",
+      "accessType": "*",
       "principalType": "ROLE",
-      "principalId": "$everyone",
+      "principalId": "cartOwner",
       "permission": "ALLOW"
     }
   ],

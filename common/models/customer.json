@@ -28,6 +28,11 @@
       "type": "hasMany",
       "model": "Address",
       "foreignKey": ""
+    },
+    "cart": {
+      "type": "hasOne",
+      "model": "Cart",
+      "foreignKey": "accountId"
     }
   },
   "acls": [
