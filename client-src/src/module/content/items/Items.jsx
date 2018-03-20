@@ -10,10 +10,6 @@ class Items extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state={
-		}
-
-		// this.renderItem=this.renderItem.bind(this);
 	}
 
 	componentWillMount() {
