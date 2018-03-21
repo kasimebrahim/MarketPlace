@@ -3,6 +3,7 @@ import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui
 import {login} from './Login-act';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
+import {Redirect} from 'react-router-dom';
 
 class Login extends React.Component{
 
@@ -27,6 +28,9 @@ class Login extends React.Component{
   }
 
   render(){
+    if(this.props.loginStat == 200){
+      return (<Redirect to="/"/>);
+    }
     return (
       <div className='login-form'>
         {/*
@@ -90,4 +94,10 @@ Login.propTypes = {
   login : PropTypes.func.isRequired
 };
 
-export default connect(null, {login})(Login);
+function mapStateToProp(state){
+  return ({
+    loginStat: state.User.status
+  });
+}
+
+export default connect(mapStateToProp, {login})(Login);
