@@ -25,7 +25,10 @@ class Items extends React.Component {
 		console.log(this.props)
 		const data = this.props.displayes;
 		const listItems = data.map((item)=>
-			<h3 key={item.id}>{item.name? item.name: item.id}</h3>
+			<div key={item.id}>
+				<h3 >{item.name? item.name: item.id}</h3>
+				<h3 >{item.id}</h3>
+			</div>
 			);
 		return (
 			<div>

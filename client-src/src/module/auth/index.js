@@ -1,4 +1,5 @@
 import Login from './login/Login';
-import Signup from './signup/Signup'
+import Signup from './signup/Signup';
+import SignupReducer from './signup/Signup-red';
 
-export {Login, Signup};
+export {Login, Signup, SignupReducer};
