@@ -2,6 +2,9 @@ import React from 'react';
 import {connect} from "react-redux";
 import PropTypes from "prop-types";
 import {featchAllItems, isItemsLoaded} from "./actions/actions";
+import Item from './item/Item';
+import BreadcrumbDivider from './Breadcrum';
+import './Items.css'
 
 class Items extends React.Component {
 	static propTypes = {
@@ -25,13 +28,11 @@ class Items extends React.Component {
 		console.log(this.props)
 		const data = this.props.displayes;
 		const listItems = data.map((item)=>
-			<div key={item.id}>
-				<h3 >{item.name? item.name: item.id}</h3>
-				<h3 >{item.id}</h3>
-			</div>
+			<Item className="item" name={item.name? item.name: item.id} description="this is description"/>
 			);
 		return (
 			<div>
+				<BreadcrumbDivider/>
 				{listItems}
 			</div>
 		);
@@ -47,3 +48,9 @@ function mapStateToProps(state){
 }
 
 export default connect(mapStateToProps, {featchAllItems, isItemsLoaded})(Items);
+
+
+{/*<div key={item.id}>
+				<h3 >{item.name? item.name: item.id}</h3>
+				<h3 >{item.id}</h3>
+			</div>*/}

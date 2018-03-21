@@ -2,6 +2,8 @@ import _ from 'lodash'
 import React, { Component } from 'react'
 import { Search,} from 'semantic-ui-react'
 import data from './temp';
+import './style.css'
+
 const source = data;
 
 export default class ItemSearch extends Component {
@@ -33,7 +35,11 @@ export default class ItemSearch extends Component {
     const { isLoading, value, results } = this.state
 
     return (
-          <Search position="right"
+      <div className="content">
+          <Search 
+            className='itemSearch'
+            position="right"
+            size='big'
             loading={isLoading}
             onResultSelect={this.handleResultSelect}
             onSearchChange={this.handleSearchChange}
@@ -41,6 +47,7 @@ export default class ItemSearch extends Component {
             value={value}
             {...this.props}
           />
+      </div>
     )
   }
 }
