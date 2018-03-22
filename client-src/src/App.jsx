@@ -3,9 +3,9 @@ import { NavBar, Container } from './module';
 import './App.css';
 
 const App = (props)=>(
-    <div className="content">
+    <div className=" co">
         <NavBar/>
-        <Container className="content"/>
+        <Container />
     </div>
     
 );

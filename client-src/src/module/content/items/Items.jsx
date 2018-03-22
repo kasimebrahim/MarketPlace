@@ -27,8 +27,8 @@ class Items extends React.Component {
 		}
 		console.log(this.props)
 		const data = this.props.displayes;
-		const listItems = data.map((item)=>
-			<Item className="item" name={item.name? item.name: item.id} description="this is description"/>
+		const listItems = data.map((item, id)=>
+			<Item key={id} className="item" name={item.name? item.name: item.id} description="this is description"/>
 			);
 		return (
 			<div>

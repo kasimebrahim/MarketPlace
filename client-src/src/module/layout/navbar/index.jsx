@@ -2,97 +2,7 @@ import React from 'react';
 import {Menu, Container} from 'semantic-ui-react';
 import {Redirect} from 'react-router-dom';
 
-const activeItem = "editorials"
-
-// class NavBar extends React.Component{
-//     constructor(props){
-//         super(props);
-
-//         this.renderHelper = this.renderHelper.bind(this);
-//         this.redirect = this.redirect.bind(this);
-//     }
-
-//     render(){
-//         return (
-//             <Menu>
-//                 <Container>
-//                     <Menu.Item
-//                     name='editorials'
-//                     active={activeItem === 'editorials'}
-//                     onClick={this.handleItemClick}
-//                     >
-//                     Editorials
-//                     </Menu.Item>
-
-//                     <Menu.Item
-//                     name='reviews'
-//                     active={activeItem === 'reviews'}
-//                     onClick={this.handleItemClick}
-//                     >
-//                     Reviews
-//                     </Menu.Item>
-
-//                     <Menu.Item
-//                     name='upcomingEvents'
-//                     active={activeItem === 'upcomingEvents'}
-//                     onClick={this.handleItemClick}
-//                     >
-//                     Upcoming Events
-//                     </Menu.Item>
-//                 {this.renderHelper()}
-//                 </Container>
-//             </Menu>
-//         );
-//     }
-
-//     renderHelper(){
-//         if(true){
-//             return (
-//                 <Menu.Menu position="right">
-//                     <Menu.Item
-//                     name='upcomingEvents'
-//                     active={activeItem === 'upcomingEvents'}
-//                     onClick={this.handleItemClick}
-//                     >
-//                         Login
-//                     </Menu.Item>
-//                     <Menu.Item
-//                     name='upcomingEvents'
-//                     active={activeItem === 'upcomingEvents'}
-//                     onClick={this.handleItemClick}
-//                     >
-//                         SignUp
-//                     </Menu.Item>
-//                 </Menu.Menu>
-//             );
-//         }else{
-//             return (
-//                 <Menu.Menu position="right">
-//                     <Menu.Item
-//                     name='upcomingEvents'
-//                     onClick={this.redirect}
-//                     >
-//                         Logout
-//                     </Menu.Item>
-//                     <Menu.Item
-//                     name='upcomingEvents'
-//                     onClick={this.redirect}
-//                     >
-//                         Cart
-//                     </Menu.Item>
-//                 </Menu.Menu>
-//             );
-//         }
-//     };
-
-//     redirect(e){
-//         let page="./login";
-//         console.log(`redirect to ${page}`);
-//         return (
-//             <Redirect to={page}/>
-//             );
-//     }
-// }
+const activeItem = "editorials";
 
 class NavBar extends React.Component {
     constructor(props){
@@ -106,7 +16,10 @@ class NavBar extends React.Component {
         this.redirectToSignup = this.redirectToSignup.bind(this);
     }
 
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+    handleItemClick = (e) => {
+        console.log(`item clicked ${e.target.name}`);
+        return this.setState({ activeItem: e.target.name });
+    }
 
     redirectToLogin(e){
         this.setState({redirect:'./login'});
@@ -123,41 +36,57 @@ class NavBar extends React.Component {
             return<Redirect to={this.state.redirect}/>;
         }
         return (
-            <Menu>
-                <Menu.Item header>Our Company</Menu.Item>
-                <Menu.Item name='aboutUs' active={activeItem === 'aboutUs'} onClick={this.handleItemClick} />
-                <Menu.Item name='jobs' active={activeItem === 'jobs'} onClick={this.handleItemClick} />
-                <Menu.Item name='locations' active={activeItem === 'locations'} onClick={this.handleItemClick} />
+            <nav className="navbar navbar-expand-md navbar-light bg-light">
+                <button className="navbar-toggler" data-toggle="collapse" data-target="#toggle-target">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+
+                <div className="collapse navbar-collapse" id="toggle-target">
+                    <a className="nav-brand"> <img src="/assets/imgs/logo2.svg" alt="logo"/></a>
+                    <span className="navbar-text">Market</span>
+                    <ul className="navbar-nav container-fluid">
+                        <li className="nav-item">
+                            <a className="nav-link" name='aboutUs' onClick={this.handleItemClick} > aboutUs</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" name='jobs' onClick={this.handleItemClick}> jobs </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" name='locations' onClick={this.handleItemClick}>locations</a>
+                        </li>
+                    {
+                        this.renderHelper()
+                    }
+                    </ul>
+                </div>
                 
-                {this.renderHelper()}
-            </Menu>
+                
+            </nav>
         )
     }
 
     renderHelper(){
         if(true){
             return (
-                <Menu.Menu position="right">
-                    <Menu.Item name='login' active={activeItem === 'locations'} onClick={this.redirectToLogin} />
-                    <Menu.Item name='signup' active={activeItem === 'locations'} onClick={this.redirectToSignup} />
-                </Menu.Menu>
+                <li className="nav-item container-fluid" >
+                    <div className="dropdown float-right">
+                        <a className="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown-target" name='your-account' >
+                         Your Account 
+
+                            <span className="caret"></span>
+                        </a>
+                        <div className="dropdown-menu" aria-labelledby="dropdown-target">
+                                <a className="dropdown-item" name="login" onClick={this.redirectToLogin}>login</a>
+                                <div className="dropdown-divider"></div>
+                                <a className="dropdown-item" name="signup" onClick={this.redirectToSignup}>signup</a>
+                        </div>
+                    </div>
+                </li>
             );
         }else{
             return (
-                <Menu.Menu position="right">
-                    <Menu.Item
-                    name='upcomingEvents'
-                    onClick={this.redirect}
-                    >
-                        Logout
-                    </Menu.Item>
-                    <Menu.Item
-                    name='upcomingEvents'
-                    onClick={this.redirect}
-                    >
-                        Cart
-                    </Menu.Item>
-                </Menu.Menu>
+                <p>logout
+                cart</p>
             );
         }
     };

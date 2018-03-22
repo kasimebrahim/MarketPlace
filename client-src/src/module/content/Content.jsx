@@ -3,8 +3,8 @@ import {ItemSearch} from './search';
 import {Items} from './items';
 
 const Content = () => (
-    <div className="content">
-        <ItemSearch className='content'/>
+    <div className="container">
+        <ItemSearch />
         <Items />
     </div>
 );

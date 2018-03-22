@@ -46,7 +46,7 @@ class Signup extends React.Component {
           >
             <Grid.Column style={{ maxWidth: 450 }}>
               <Header as='h2' color='teal' textAlign='center'>
-                <Image src='/logo.png' />
+                <Image src='/assets/imgs/ls2.png' />
                 {' '}Create your Account
               </Header>
               <Form size='large' onSubmit={this.register}>
