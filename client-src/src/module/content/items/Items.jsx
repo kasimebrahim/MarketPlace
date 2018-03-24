@@ -30,7 +30,9 @@ class Items extends React.Component {
 			);
 		return (
 			<div>
-				{listItems}
+				<div className="card-columns">
+				  {listItems}
+				</div>
 			</div>
 		);
 	}
