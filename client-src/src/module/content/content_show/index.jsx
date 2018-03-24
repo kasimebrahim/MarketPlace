@@ -1,6 +1,7 @@
 import React from 'react';
 import Slide from './Slide';
 import Categories from './Categories';
+import Invite from './Invite';
 
 export default class ContentShow extends React.Component {
 
@@ -19,7 +20,7 @@ export default class ContentShow extends React.Component {
 						<Slide />
 					</div>
 					<div className="show-right-col col-md-3 col-sm-12 order-md-3 order-sm-2 order-2">
-						<h1 className="display-2">third</h1>
+						<Invite />
 					</div>
 				</div>
 			</div>
