@@ -1,10 +1,10 @@
 import React from 'react';
-import {ItemSearch} from './search';
+import ContentShow from './content_show';
 import {Items} from './items';
 
 const Content = () => (
     <div className="container">
-        <ItemSearch />
+        <ContentShow />
         <Items />
     </div>
 );

@@ -47,8 +47,8 @@ class NavBar extends React.Component {
                     <span className="navbar-text nav-brand-text">Market place</span> 
 
                     <ul className="navbar-nav container-fluid">
-                        <li className="nav-item">
-                            <a className="nav-link" name='aboutUs' onClick={this.handleItemClick} > aboutUs</a>
+                        <li className="nav-item active">
+                            <a className="nav-link" name='Home' onClick={this.handleItemClick} > Home</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" name='jobs' onClick={this.handleItemClick}> jobs </a>
@@ -77,8 +77,11 @@ class NavBar extends React.Component {
 
                             <span className="caret"></span>
                         </a>
-                        <div className="dropdown-menu" aria-labelledby="dropdown-target">
-                                <a className="dropdown-item" name="login" onClick={this.redirectToLogin}>login</a>
+                        <div className="dropdown-menu text-center" aria-labelledby="dropdown-target">
+                                <img className="img-fluid dropdown-item" src="/assets/imgs/noavatar2.png"/><br/>
+                                <a className="dropdown-item" name="login" onClick={this.redirectToLogin}>
+                                    login
+                                </a>
                                 <div className="dropdown-divider"></div>
                                 <a className="dropdown-item" name="signup" onClick={this.redirectToSignup}>signup</a>
                         </div>
