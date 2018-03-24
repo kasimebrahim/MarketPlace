@@ -1,10 +1,10 @@
 import React from 'react';
-import { NavBar, Container } from './module';
+import { Head, Container } from './module';
 import './App.css';
 
 const App = (props)=>(
     <div className=" co">
-        <NavBar/>
+        <Head className="nvb"/>
         <Container />
     </div>
     

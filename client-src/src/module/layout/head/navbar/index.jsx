@@ -30,20 +30,22 @@ class NavBar extends React.Component {
 
     render() {
         const { activeItem } = this.state
-
         if(this.state.redirect){
             this.setState({redirect:false});
             return<Redirect to={this.state.redirect}/>;
         }
         return (
             <nav className="navbar navbar-expand-md navbar-light bg-light">
+
                 <button className="navbar-toggler" data-toggle="collapse" data-target="#toggle-target">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
                 <div className="collapse navbar-collapse" id="toggle-target">
-                    <a className="nav-brand"> <img src="/assets/imgs/logo2.svg" alt="logo"/></a>
-                    <span className="navbar-text">Market</span>
+
+                    <a className="nav-brand nav-brand-image"> <img src="/assets/imgs/logo2.svg" alt="logo"/></a>
+                    <span className="navbar-text nav-brand-text">Market place</span> 
+
                     <ul className="navbar-nav container-fluid">
                         <li className="nav-item">
                             <a className="nav-link" name='aboutUs' onClick={this.handleItemClick} > aboutUs</a>

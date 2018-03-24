@@ -1,4 +1,4 @@
-import NavBar from './navbar';
+import Head from './head';
 import Container from './container/Container'
 
-export {NavBar, Container};
+export {Head, Container};

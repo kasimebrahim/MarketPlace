@@ -1,3 +1,20 @@
 .break{
 	line-break: normal;
 }
+
+.jmb{
+	margin-bottom: 0px;
+}
+
+.nav-brand-image{
+	padding-right: 1vw;
+}
+.nav-brand-text{
+	padding-right: 5vw;
+	white-space: nowrap;
+}
+
+.head{
+	position: relative;
+	z-index: 99;
+}
