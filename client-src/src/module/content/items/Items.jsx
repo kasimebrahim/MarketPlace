@@ -3,8 +3,6 @@ import {connect} from "react-redux";
 import PropTypes from "prop-types";
 import {featchAllItems, isItemsLoaded} from "./actions/actions";
 import Item from './item/Item';
-import BreadcrumbDivider from './Breadcrum';
-import './Items.css'
 
 class Items extends React.Component {
 	static propTypes = {
@@ -32,7 +30,6 @@ class Items extends React.Component {
 			);
 		return (
 			<div>
-				<BreadcrumbDivider/>
 				{listItems}
 			</div>
 		);
