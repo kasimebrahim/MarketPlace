@@ -2,11 +2,30 @@
 	padding: 1.2rem;
 }
 
+
+/*content-show start*/
 .carousel-inner img{
 	width: 100%;
 	height: 100%;
 }
 
+.list-group{
+	height: 100%;
+	margin-top: auto;
+}
+.show-left-col{
+	height: 100%;
+	margin: auto;
+}
+.show-mid-col{
+	height: 100%;
+	margin: auto;
+}
+.show-right-col{
+	height: 100%;
+	margin: auto;
+}
+/*content-show end*/
 .break{
 	line-break: normal;
 }
