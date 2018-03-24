@@ -26,6 +26,11 @@
 	margin: auto;
 }
 /*content-show end*/
+
+.breadcrumb{
+	background-color: #fff;
+}
+
 .break{
 	line-break: normal;
 }
