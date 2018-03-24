@@ -8,7 +8,7 @@ const Content = () => (
         <ContentShow />
         <hr />
         <Breadcrumb />
-        <hr />
+        <hr className="nomargin"/>
         <Items />
     </div>
 );

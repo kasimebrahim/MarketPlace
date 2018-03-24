@@ -27,8 +27,12 @@
 }
 /*content-show end*/
 
-.breadcrumb{
+.breadcrumb-main {
 	background-color: #fff;
+}
+
+.nomargin{
+	margin-top: 0px;
 }
 
 .break{
