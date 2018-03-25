@@ -4,7 +4,7 @@ import {Items} from './items';
 import Breadcrumb from './breadcrumb';
 
 const Content = () => (
-    <div className="container">
+    <div>
         <ContentShow />
         <hr />
         <Breadcrumb />

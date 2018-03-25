@@ -1,13 +1,17 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
-import {Login, Signup, Content} from '../../../module';
+import {Login, Signup, Content, AddItem} from '../../../module';
 
 const Container = (props) => (
-    <Switch>
-        <Route path="/login" component={Login}/>
-        <Route path="/signup" component={Signup}/>
-        <Route path="/" component={Content}/>
-    </Switch>
+
+    <div className="container">
+	    <Switch>
+	        <Route path="/login" component={Login}/>
+	        <Route path="/signup" component={Signup}/>
+	        <Route path="/add" component={AddItem}/>
+	        <Route path="/" component={Content}/>
+	    </Switch>
+    </div>
 );
 
 export default Container;

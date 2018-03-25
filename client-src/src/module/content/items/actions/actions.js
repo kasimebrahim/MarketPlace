@@ -6,7 +6,7 @@ function featchAllItems(){
 	return (dispatch)=>{
 		// TODO: items loading
 		// isItemsLoading({isLoading:true});
-		axios.get('http://192.168.43.222:3001/api/Items').then((response)=>{
+		axios.get('http://192.168.1.6:3001/api/Items').then((response)=>{
 			dispatch({
 				type:FEATCH_ALL_ITEMS,
 				payload:{
