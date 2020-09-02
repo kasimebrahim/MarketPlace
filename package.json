@@ -19,7 +19,7 @@
     "strong-error-handler": "^2.0.0",
     "loopback-component-explorer": "^5.0.0",
     "loopback-connector-mongodb": "^3.4.1",
-    "loopback": "^3.0.0"
+    "loopback": "^3.22.0"
   },
   "devDependencies": {
     "eslint": "^3.17.1",
